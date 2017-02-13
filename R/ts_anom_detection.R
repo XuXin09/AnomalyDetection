@@ -302,7 +302,7 @@ AnomalyDetectionTs <- function(x, max_anoms = 0.10, direction = 'pos',
 
   if(plot){
     # -- Build title for plots utilizing parameters set by user
-    plot_title <-  paste(title, round(anom_pct, digits=2), "% Anomalies (alpha=", alpha, ", direction=", direction,")", sep="")
+    plot_title <-  paste(title, round(anom_pct, digits=2), "% 异常点 (α=", alpha, ")", sep="")
     if(longterm){
       plot_title <- paste(plot_title, ", longterm=T", sep="")
     }
